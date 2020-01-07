@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fichiers css liés à la page -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/form.css">
+  <!-- Icône -->
+  <link rel=icon href="img//favicon.png" sizes="16x16 32x32 64x64" type="image/png">
+  <!-- Titre de la page -->
+  <title>CSGO - Contact</title>
+</head>
+<body>
+
+  <!-- Menu de navigation -->
+  <nav class="topnav">
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Pr&eacute;sentation</a>
+      <a href="equipes.html">&Eacute;quipes</a>
+      <a href="modes-jeu.html">Modes de jeu</a>
+      <a href="armes.html">Armes & skins</a>
+      <a href="esport.html">eSport</a>
+      <a href="contact.html" id="active">Contact</a>
+    </nav>
+  
+  <!-- Fenêtre contenant le formulaire -->
+  <div id="container">
+
+    <!-- Topbar -->
+    <div id="topbar">
+      <div id="sub-container">
+        <!-- Boutons -->
+        <div id="close"></div>
+        <div id="minus"></div>
+        <div id="plus"></div>
+        <!-- Titre de la fenêtre -->
+        <p>Formulaire de contact</p>
+      </div>
+    </div>
+
+    <!-- Formulaire de contact -->
+    <div id="form">
+      <form name="contact" method="POST">
+        <div>
+          <input id="firstname" class="w" type="text" name="surname" placeholder="Pr&eacute;nom" maxlength="30" required>
+          <br>
+          <input id="name" class="w" type="text" name="name" placeholder="Nom" maxlength="30">
+          <br>
+          <input id="email" type="email" name="email" placeholder="exemple@mail.com" size="40px" maxlength="30" required>
+          <br>
+          <textarea id="comment-desktop" name="comment" cols="45" rows="12" maxlength="800" placeholder="Votre commentaire"></textarea>
+          <br>
+          <button id="send" type="submit">Envoyer</button>
+          <button id="reset" type="reset">Effacer</button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+
+  
+  
+</body>
+</html>

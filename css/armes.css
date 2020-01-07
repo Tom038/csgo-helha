@@ -1,0 +1,48 @@
+/* Elements flexibles */
+.content-box .content .img{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  text-align: center;
+}
+
+/* Annule la padding-top */
+.padd-off .content{padding-top: 0;}
+
+/* Listes */
+.content-box .content ul{
+  margin-left: -10px;
+  text-align: center;
+  list-style-type: none;
+  font-size: xx-large;
+  font-weight: bold;
+}
+/* Catégorie d'arme */
+.content-box .content .category{margin-top: 50px;}
+/* Images */
+.content-box .content .img img{
+  padding: 20px;
+  width: 220px;
+}
+/* Sous-titres */
+.content-box .content h3{font-weight: normal;}
+/* Couleur de la rarete des skins*/
+#normal{color: #ddd;}
+#peu-commun{color: #5e98d9;}
+#rare{color: #4b69ff;}
+#mythique{color: #8847ff;}
+#legendaire{color: #d32ce6 ;}
+#ancien{color: #eb4b4b;}
+
+
+@media (max-width: 900px){
+  .content-box .content{padding: 20px;}
+  .content-box .content .img img{
+    padding: 0;
+    width: 40vw;
+  }
+}

@@ -1,0 +1,125 @@
+/* Eléments flexibles */
+form, #container, p, #container #topbar div{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap; 
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  text-align: center;
+}
+
+#form{
+  margin-top: 10px;
+}
+/* Champs */
+form input{
+  padding: 4px 7px;
+  height: 35px;
+  float: left;
+}
+form input.w{width: 50%;}
+form textarea{
+  padding: 7px 7px;
+  resize: none;
+}
+form input, form textarea, form button{
+  font-size: x-large;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+form input:focus, form textarea:focus{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+/* Boutons */
+form button{
+  margin: 30px auto;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #1d1d1d;
+  color: white;
+}
+form button:hover{
+  background-color: #1d1d1dd0;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+}
+
+/* Fenêtre du formulaire */
+#container, p, #container #topbar div{
+  margin: auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  align-items: start;
+  -webkit-align-items: start;
+  -moz-align-items: start;
+}
+/* div principal */
+#container{
+  width: 65%;
+  background-color: #eee;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: 30px auto;
+}
+/* Topbar */
+#topbar{
+  border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  background-color: #ccc;
+  height: 30px;
+  width: 100%;
+}
+#sub-container{
+  height: 30px;
+  width: 99%;
+}
+#container p{font-size: 23px;}
+#container #sub-container div{
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  margin: auto 3px;
+}
+#close{background-color: #ff1919;}
+#minus{background-color: #ff780e;}
+#plus{background-color: #33cc0d;}
+
+/* Responsive */
+@media (max-width:1250px){
+  #container{width: 80%;}
+}
+
+@media (max-width:900px){
+
+  /* Champs */
+  form input, form textarea, form input.w{
+    width: 85%;
+    float: none;
+  }
+  /* div qui contient le formulaire */
+  #container{width: 95%;}
+
+}

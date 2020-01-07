@@ -1,0 +1,87 @@
+/* Eléments flexibles */
+#header, #header h1, .container, .container h2{
+  display: flex;
+  display:-webkit-flex;
+  flex-wrap: wrap; 
+  -webkit-flex-wrap: wrap;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+}
+/* Elements qui ont une image de fond */
+#header, .container div.content{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Liens */
+a{text-decoration: none;}
+
+/* Image d'en-tête */
+#header{
+  z-index: 0;
+  background-image: url(../img/home_bg.jpg);
+  height: 300px;
+}
+#header h1{
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Menu navigation */
+.container{
+  width: 90%;
+  margin: 30px auto;
+  vertical-align: middle;
+}
+.container a{margin: 10px;}
+
+  /* Images navigation */
+  #presentation{background-image: url(../img/presentation.jpg);}
+  #equipes{background-image: url(../img/equipes.jpg);}
+  #modes-jeu{background-image: url(../img/modes_jeu.jpg);}
+  #armes{background-image: url(../img/armes.jpg);}
+  #esport{background-image: url(../img/e-sport.jpg);}
+  .container .content{
+    width: 500px;
+    height: 285px;
+  }
+  /* Nom des pages */
+  .container h2{
+    height: 285px;
+    font-size: xx-large;
+    background-color: transparent;
+    color: transparent;
+  }
+  .container a:hover h2{
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+  .container .mobile{display: none;}
+
+/* Responsive */
+@media (max-width: 900px){
+
+  /* Images */
+  .container .content{
+    width: 100vw;
+    margin: 0;
+  }
+  /* Noms des pages */
+  .content h2{display: none;height: 0;}
+  a:hover .content h2{display: none;}
+  .container .mobile{
+    display: flex;
+    color: black;
+    height: 70px;
+  }
+
+}
